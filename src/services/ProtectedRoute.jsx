@@ -1,0 +1,14 @@
+import { useSelector } from "react-redux";
+import { Navigate, Outlet } from "react-router-dom";
+
+const ProtectedRoute = () => {
+  const token = useSelector((state) => state.auth.token);
+  const accountType = useSelector((state) => state.account.accountType)
+  if (!token && accountType === "Student") {
+    return <Navigate to="/Login" replace />;
+  }
+
+  return <Outlet />;
+};
+
+export default ProtectedRoute;

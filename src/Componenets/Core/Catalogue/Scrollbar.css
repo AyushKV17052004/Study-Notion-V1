@@ -1,0 +1,48 @@
+/* Chrome, Edge, Safari */
+.custom-scrollbar::-webkit-scrollbar {
+  height: 15px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #1f2937;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #facc15;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #eab308;
+}
+
+/* Firefox */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #facc15 rgb(3,1,29);
+}
+
+.custom-scrollbar-2::-webkit-scrollbar {
+  height: 15px;
+}
+
+.custom-scrollbar-2::-webkit-scrollbar-track {
+  background: #1f2937;
+  border-radius: 10px;
+}
+
+.custom-scrollbar-2::-webkit-scrollbar-thumb {
+  background: #facc15;
+  border-radius: 10px;
+}
+
+.custom-scrollbar-2::-webkit-scrollbar-thumb:hover {
+  background: #eab308;
+}
+
+/* Firefox */
+.custom-scrollbar-2 {
+  scrollbar-width: thin;
+  scrollbar-color: #cd060d rgb(3,1,29);
+}
